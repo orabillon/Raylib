@@ -13,9 +13,12 @@ namespace CasseBrique
 
             while (!Raylib.WindowShouldClose())
             {
-                game.Update();
+                game.Update(Raylib.GetFrameTime());
                 game.Draw();
             }
+
+            // libere les resource
+            game._Unload();
 
             Raylib.CloseWindow();
             return Task.CompletedTask;

@@ -11,10 +11,12 @@ namespace CasseBrique
 {
     public class Game
     {
-      
+        Balle maBalle;
+
+
         private void _Init()
         {
-           
+           maBalle = new Balle("images/balle.png",10,10);
         }
 
         public Game()
@@ -22,20 +24,26 @@ namespace CasseBrique
             _Init();
         }
 
-        public void Update()
+        public void Update(float dt)
         {
-           
+            maBalle.Update(dt);
         }
 
         public void Draw()
         {
             Raylib.BeginDrawing();
 
-            Raylib.ClearBackground(Raylib.WHITE);
+            Raylib.ClearBackground(Raylib.BLACK);
 
-            Raylib.DrawText("CASSE BRIQUE", 1, 1, 20, Raylib.DARKBLUE);
+           
+            maBalle.Draw();
 
             Raylib.EndDrawing();
+        }
+
+        public void _Unload()
+        {
+            maBalle.Unload();
         }
     }
 }

@@ -25,3 +25,4 @@ C:\Users\orabi\Documents\GitHub\Raylib\Casse Brique\CasseBrique\CasseBrique\obj\
 C:\Users\orabi\Documents\GitHub\Raylib\Casse Brique\CasseBrique\CasseBrique\obj\Debug\net7.0\CasseBrique.pdb
 C:\Users\orabi\Documents\GitHub\Raylib\Casse Brique\CasseBrique\CasseBrique\obj\Debug\net7.0\CasseBrique.genruntimeconfig.cache
 C:\Users\orabi\Documents\GitHub\Raylib\Casse Brique\CasseBrique\CasseBrique\obj\Debug\net7.0\ref\CasseBrique.dll
+C:\Users\orabi\Documents\GitHub\Raylib\Casse Brique\CasseBrique\CasseBrique\bin\Debug\net7.0\images\balle.png
