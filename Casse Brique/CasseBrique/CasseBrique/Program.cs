@@ -8,7 +8,7 @@ namespace CasseBrique
         public static Game game = new Game();
         public static Task Main(string[] args)
         {
-            Raylib.InitWindow(720, 720, "Mon Casse Brique Raylib");
+            Raylib.InitWindow(528, 600, "Mon Casse Brique Raylib");
             Raylib.SetTargetFPS(60);
 
             while (!Raylib.WindowShouldClose())
