@@ -15,7 +15,7 @@ namespace Pong
 
         private void _Init()
         {
-            font = Raylib.GetFontDefault();
+            font = Raylib.LoadFont("assets/fonts/ec-bricks.ttf");
         }
 
         public Game()
@@ -39,14 +39,14 @@ namespace Pong
             Vector2 textSize = Raylib.MeasureTextEx(font, text, 90, 20);
             Vector2 pos = new Vector2((Raylib.GetScreenWidth() - textSize.X) / 2, (Raylib.GetScreenHeight() - textSize.Y) / 2);
 
-            Raylib.DrawTextEx(font, text, pos, 90, 20, Raylib.WHITE);
+            Raylib.DrawTextEx(font, text, pos, 90, 20, Raylib.LIME);
 
             Raylib.EndDrawing();
         }
 
         public void _Unload()
         {
-           
+           Raylib.UnloadFont(font);
         }
     }
 }
